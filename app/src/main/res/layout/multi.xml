@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/explainback">
+
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_circle"
+        android:text='👈'
+        android:textSize="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick= "cnm"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="人数"
+        android:textSize="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_back"
+        android:textColor="#EE6B62"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:hint="写人数在这里"
+        android:maxLines="1"
+        android:inputType="number"
+        />
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ok"
+        app:layout_constraintTop_toBottomOf="@+id/num"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="-110dp"
+        android:onClick= "ok"/>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/orgy"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

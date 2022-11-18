@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/explainback">
+
+    <ImageView
+        android:id="@+id/bowljpg"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bowl"
+        />
+
+    <ImageView
+        android:id="@+id/i6"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:srcCompat="@drawable/sezi" />
+
+    <ImageView
+        android:id="@+id/i5"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/sezi"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="80dp" />
+
+    <ImageView
+        android:id="@+id/i4"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/sezi"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/sezi"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="90dp" />
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/sezi"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="120dp" />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        app:srcCompat="@drawable/sezi" />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/next"
+        app:layout_constraintLeft_toLeftOf="@+id/bowljpg"
+        app:layout_constraintTop_toTopOf="@+id/bowljpg"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-30dp"
+        android:onClick= "next"/>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_circle"
+        android:text='👈'
+        android:textSize="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick= "quit"
+        />
+    <Button
+        android:id="@+id/level"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_circle"
+        android:text='?'
+        android:textSize="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="level"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
